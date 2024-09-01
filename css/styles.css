@@ -120,7 +120,7 @@ button {
   color: #2e2f42;
 }
 
-.mobil-menu {
+.button-menu {
   width: 24px;
   height: 24px;
   background-color: transparent;
@@ -1002,7 +1002,7 @@ button {
     height: 72px;
   }
 
-  .mobil-menu {
+  .button-menu {
     display: none;
   }
 
