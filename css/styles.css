@@ -795,27 +795,14 @@ button {
 /* checkbox */
 
 .modal-checkbox {
-  height: 31px;
-  margin-bottom: 24px;
-}
-
-.custom-checkbox {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  fill: transparent;
-  min-width: 16px;
-  min-height: 16px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 256px;
+  height: 31px;
 }
 
 .label-checkbox {
-  display: flex;
-  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -824,8 +811,20 @@ button {
   cursor: pointer;
 }
 
-.check-text-policy {
-  margin-left: 8px;
+.custom-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
+  min-width: 16px;
+  min-height: 16px;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .label-checkbox > .custom-checkbox {
@@ -851,7 +850,7 @@ button {
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
-  margin: 0 auto 24px;
+  margin: 24px auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   border: none;
